@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('address');
             $table->string('phone_number');
             $table->unsignedBigInteger('rol_id');
-            $table->unsignedBigInteger('project_id');
+            $table->unsignedBigInteger('project_id')->nullable();
             $table->timestamp('hiring_date')->nullable();
             $table->string('password');
             $table->rememberToken();
